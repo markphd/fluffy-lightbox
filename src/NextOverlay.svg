@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="130px" height="964px" viewBox="0 0 130 964" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="100%" cy="50%" fx="100%" fy="50%" r="100%" gradientTransform="translate(1.000000,0.500000),scale(1.000000,0.134855),scale(1.000000,3.907884),translate(-1.000000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#252525" offset="0%"></stop>
+            <stop stop-color="#2D2D2D" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.501283482">
+        <g id="Desktop-HD-Hover-2" transform="translate(-1310.000000, -30.000000)" fill="url(#radialGradient-1)">
+            <path d="M1310,512 C1310,341.333333 1353.33333,180.666667 1440,30 L1440,994 C1353.33333,843.333333 1310,682.666667 1310,512 Z" id="Rectangle"></path>
+        </g>
+    </g>
+</svg>
