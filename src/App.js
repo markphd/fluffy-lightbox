@@ -11,6 +11,7 @@ class App extends Component {
 
     this.state = {
       index: 0,
+      isLoading: false
     };
     
     this.clickPrev = this.clickPrev.bind(this);
@@ -21,12 +22,14 @@ class App extends Component {
   clickPrev() {
     this.setState({
       index: this.state.index > 0 ? this.state.index - 1 : 0,
+      isLoading: this.state.isLoading ? false : true
     })
   }
 
   clickNext() {
     this.setState({
       index: this.state.index + 1,
+      isLoading: this.state.isLoading ? false : true
     })
   }
 
@@ -105,11 +108,28 @@ class App extends Component {
     return captionCollection[index]
   }
 
+  componentWillUpdate() {
+    if (!this.state.isLoading) {
+      this.setState({
+      isLoading: true,
+    })
+    }
+  }
+
+  componentDidUpdate() {
+    console.log("Component Did Mount!")
+    if (this.state.isLoading) {
+      this.setState({
+      isLoading: false,
+    })
+    }
+  }
+
   render() {
     return (
       <div className="lightbox">
-        <section className="slider">
-          <img src={this.images(this.state.index)} className="slide" />
+        <section id="slider" className={this.state.transition}>
+          <img src={this.images(this.state.index)} />
           <div className="caption">
             <h3>{this.captions(this.state.index).title}</h3>
             <div>{this.captions(this.state.index).description.split('\n').map((item, key) => {
