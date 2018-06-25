@@ -94,7 +94,7 @@ body {
 
 .caption {
 	color: #d0d0d0;
-	font-family: Arial, 'Open Sans', 'sans-serif';
+	font-family: 'Open Sans', 'sans-serif';
 	text-align: center;
 	flex-basis: content;
 }
