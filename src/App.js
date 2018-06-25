@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Close from './Close.svg';
 import Prev from './Prev.js';
 import Next from './Next.js';
 import './App.css';
