@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Close from './Close.svg';
 import Prev from './Prev.js';
 import Next from './Next.js';
+import Caption from './Caption.js';
 import './App.css';
 
 class App extends Component {
@@ -57,12 +58,36 @@ class App extends Component {
   captions(index) {
     const captionCollection = [
       {
-        "title": "This is a title.",
-        "description": "This is a straight \n description of the first image."
+        "title": "",
+        "description": ""
+      },
+      {
+        "title": "This is a great art piece.",
+        "description": "This is a straight \n description of the first image. \n description of the first image."
       },
       {
         "title": "This is a title.",
         "description": "This is a straight description of the second image."
+      },
+      {
+        "title": "This is a title.",
+        "description": "This is a straight description of the third image."
+      },
+      {
+        "title": "This is a title.",
+        "description": "This is a straight description of the third image. \nThis is another line. \nSo this is third line."
+      },
+      {
+        "title": "This is a title.",
+        "description": "This is a straight description of the first image."
+      },
+      {
+        "title": "This is a title.",
+        "description": "This is a straight description of the second image."
+      },
+      {
+        "title": "This is a title.",
+        "description": "This is a straight description of the third image. \nThis is another line. \nSo this is third line."
       },
       {
         "title": "This is a title.",
@@ -78,15 +103,7 @@ class App extends Component {
       },
       {
         "title": "This is a title.",
-        "description": "This is a straight description of the third image."
-      },
-      {
-        "title": "This is a title.",
-        "description": "This is a straight description of the first image."
-      },
-      {
-        "title": "This is a title.",
-        "description": "This is a straight description of the second image."
+        "description": "This is a straight description of the third image. \nThis is another line. \nSo this is third line."
       },
       {
         "title": "This is a title.",
@@ -131,13 +148,7 @@ class App extends Component {
       <div className="lightbox">
         <section id="slider" className={this.state.transition}>
           <img src={this.images(this.state.index)} />
-          <div className="caption">
-            <h3>{this.captions(this.state.index).title}</h3>
-            <div>{this.captions(this.state.index).description.split('\n').map((item, key) => {
-                  return <span key={key}>{item}<br/></span>
-                  })}
-            </div>
-          </div>
+          <Caption title={this.captions(this.state.index).title} description={this.captions(this.state.index).description}/>
         </section>
         <Prev clickPrev={this.clickPrev}/>
         <Next clickNext={this.clickNext}/>
