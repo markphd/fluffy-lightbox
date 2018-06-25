@@ -141,6 +141,16 @@ class App extends Component {
         </section>
         <Prev clickPrev={this.clickPrev}/>
         <Next clickNext={this.clickNext}/>
+        <svg id="close" width="40px" height="40px" viewBox="0 0 40 40">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Desktop-HD" transform="translate(-1370.000000, -30.000000)">
+                    <g id="Close-White" transform="translate(1370.000000, 30.000000)">
+                        <circle class="close-oval" id="Oval" fill-rule="evenodd" opacity="0.15" cx="20" cy="20" r="20"></circle>
+                        <polygon id="Close" fill="#FFFFFF" fill-rule="nonzero" points="21.8 20 29 27.2 27.2 29 20 21.8 12.8 29 11 27.2 18.2 20 11 12.8 12.8 11 20 18.2 27.2 11 29 12.8"></polygon>
+                    </g>
+                </g>
+            </g>
+        </svg>
       </div>
     );
   }
