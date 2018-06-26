@@ -20,7 +20,7 @@ class Caption extends Component {
 
 		if (description.length > 0) {
 			return (
-				<div>{description.split('\n').map((item, key) => {
+				<div className="description">{description.split('\n').map((item, key) => {
 				      return <span key={key}>{item}<br/></span>
 				      })}
 				</div>

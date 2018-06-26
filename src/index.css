@@ -93,8 +93,9 @@ body {
 }
 
 .caption {
-	color: #d0d0d0;
+	color: #fff;
 	font-family: 'Open Sans', 'sans-serif';
+	font-weight: lighter;
 	text-align: center;
 	flex-basis: content;
 }
@@ -132,10 +133,14 @@ svg#close {
 	.caption h3 {
 		margin: 0;
 		line-height: 1.5em;
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	.caption span {
+		font-size: 12px;
+	}
+
+	.description {
 		font-size: 12px;
 	}
 
@@ -187,10 +192,14 @@ svg#close {
 	.caption h3 {
 		margin: 0;
 		line-height: 1.5em;
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	.caption span {
+		font-size: 12px;
+	}
+
+	.description {
 		font-size: 12px;
 	}
 
@@ -287,7 +296,12 @@ svg#close {
 
 	.caption h3 {
 		margin: 0;
-		line-height: 1.5em;	
+		line-height: 1.5em;
+		font-size: 15px;
+	}
+
+	.description {
+		font-size: 15px;
 	}
 
 	svg#close {
